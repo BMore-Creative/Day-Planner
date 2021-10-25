@@ -1,12 +1,23 @@
 //DOM element variables
 const currDay = document.querySelector("#currentDay");
-
+const dayPlan = document.querySelectorAll("textarea");
 
 //Displays current date at top of screen
-currDay.textContent = moment().format("dddd, MMMM Do")
-console.log(currDay.textContent);
+currDay.textContent = moment().format("dddd, MMMM Do");
 
-for (let i = 0; i < array.length; i++) {
-    const element = array[i];
-    
+const currTime = moment().format("HH");
+
+dayPlan.forEach(function (currBlock) {
+  const blockTime = currBlock.dataset.time;
+  if (blockTime === currTime) {
+    currBlock.classList.add("present");
+  } else if (blockTime < currTime) {
+    currBlock.classList.add("past");
+  } else if (blockTime > currTime) {
+    currBlock.classList.add("future");
+  }
+});
+
+function save(id) {
+  let block = id;
 }

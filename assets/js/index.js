@@ -19,5 +19,14 @@ dayPlan.forEach(function (currBlock) {
 });
 
 function save(id) {
-  let block = id;
+  const block = document.querySelector(id);
+  console.log(block);
+  const blockText = block.value
+  console.log(blockText);
+  localStorage.setItem(id, blockText)
 }
+
+dayPlan.forEach(function (block) {
+    const id = '#' + block.id
+    block.value = localStorage.getItem(id)
+})

@@ -3,7 +3,7 @@
 
 ![image](https://user-images.githubusercontent.com/80925456/138736101-27c3a2a6-b4e0-4b02-9e79-630fb9a5fd8f.png)
 
-Live Link: 
+Live Link: https://bmore-creative.github.io/Day-Planner/
 
 ## Table of Contents
 

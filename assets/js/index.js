@@ -30,7 +30,3 @@ dayPlan.forEach(function (block) {
     const id = '#' + block.id
     block.value = localStorage.getItem(id)
 })
-
-function clearPlanner() {
-    localStorage.clear
-}
